@@ -32,7 +32,7 @@ final class CRLoggerInitializer {
   CRLoggerInitializer._();
 
   static const _channel = EventChannel(
-    'com.cleveroad.cr_logger/logger',
+    'com.tep_cr_logger/logger',
   );
 
   static CRLoggerInitializer instance = CRLoggerInitializer._();

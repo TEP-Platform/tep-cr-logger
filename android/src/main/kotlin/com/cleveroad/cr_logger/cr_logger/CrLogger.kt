@@ -1,4 +1,4 @@
-package com.cleveroad.cr_logger.cr_logger
+package com.tep_cr_logger
 
 import io.flutter.plugin.common.EventChannel
 

@@ -95,7 +95,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.cleveroad.cr_logger.cr_logger
+        package: com.tep_cr_logger
         pluginClass: CrLoggerPlugin
       ios:
         pluginClass: CrLoggerPlugin
