@@ -1,4 +1,4 @@
-package com.tep_cr_logger
+package com.tep.cr_logger
 
 import androidx.annotation.NonNull
 
@@ -21,11 +21,11 @@ class CrLoggerPlugin : FlutterPlugin, MethodCallHandler {
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         channel = MethodChannel(
             flutterPluginBinding.binaryMessenger,
-            "com.tep_cr_logger/method_channel"
+            "com.tep.cr_logger/method_channel"
         )
         channel.setMethodCallHandler(this)
         eventChannel =
-            EventChannel(flutterPluginBinding.binaryMessenger, "com.tep_cr_logger/logger")
+            EventChannel(flutterPluginBinding.binaryMessenger, "com.tep.cr_logger/logger")
         CrLogger.init(eventChannel)
     }
 

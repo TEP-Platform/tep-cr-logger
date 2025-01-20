@@ -6,7 +6,7 @@ public class SwiftCrLoggerPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "cr_logger", binaryMessenger: registrar.messenger())
     let instance = SwiftCrLoggerPlugin()
-    FlutterEventChannel(name: "com.tep_cr_logger/logger", binaryMessenger: registrar.messenger())
+    FlutterEventChannel(name: "com.tep.cr_logger/logger", binaryMessenger: registrar.messenger())
                   .setStreamHandler(CrLogger())
       
 
