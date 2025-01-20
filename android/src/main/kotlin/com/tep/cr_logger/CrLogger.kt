@@ -1,4 +1,4 @@
-package com.tep_cr_logger
+package com.tep.cr_logger
 
 import io.flutter.plugin.common.EventChannel
 

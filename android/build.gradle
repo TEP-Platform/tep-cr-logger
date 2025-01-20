@@ -1,4 +1,4 @@
-group 'com.tep_cr_logger'
+group 'com.tep.cr_logger'
 version '1.0-SNAPSHOT'
 
 def localProperties = new Properties()
@@ -34,8 +34,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    if (project.android.hasProperty("namespace")) {
+        namespace 'com.tep.cr_logger'
+    }
+    
     compileSdkVersion 35
-    namespace 'com.tep_cr_logger'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
